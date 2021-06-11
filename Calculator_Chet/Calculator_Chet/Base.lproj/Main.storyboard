@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator_Chet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XK-Kb-KlS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fin-eF-2Sg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjq-67-Te3">
+                                <rect key="frame" x="27" y="480" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mve-EC-BrB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etB-a7-c7e">
+                                <rect key="frame" x="107" y="480" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fw7-DN-Ob1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXp-69-i2z">
+                                <rect key="frame" x="107" y="560" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9d-YD-d6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djM-mo-h6P">
+                                <rect key="frame" x="27" y="400" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TYW-c3-IRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q7-5u-GUc">
+                                <rect key="frame" x="27" y="320" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajn-bn-xpQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd8-Xg-vM4">
+                                <rect key="frame" x="107" y="320" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRZ-dd-jQI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP9-Gy-CNB">
+                                <rect key="frame" x="107" y="400" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvG-tf-AT1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnt-l9-WMs">
+                                <rect key="frame" x="187" y="320" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5F-nh-e5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUx-Jz-QOm">
+                                <rect key="frame" x="187" y="400" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v3O-hX-qJz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyi-g1-d77">
+                                <rect key="frame" x="187" y="480" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16o-Qr-Pj3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN7-x3-8me">
+                                <rect key="frame" x="27" y="560" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Red"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JnH-d5-zgz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8v-MB-KEo">
+                                <rect key="frame" x="187" y="560" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Orange"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9Q-p1-9Yd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVD-EV-1cy">
+                                <rect key="frame" x="267" y="560" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Orange"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PgO-Ub-dp2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-OR-PiV">
+                                <rect key="frame" x="267" y="480" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Orange"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHS-sd-ggP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXp-Jw-frz">
+                                <rect key="frame" x="267" y="400" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Orange"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QkH-NE-ykd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-Ym-CKg">
+                                <rect key="frame" x="267" y="320" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Orange"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <state key="normal" title="*">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputOperand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2jP-GA-mpp"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="miI-6z-dWQ">
+                                <rect key="frame" x="245" y="171" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Red"/>
+                                <connections>
+                                    <action selector="Stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="pYM-Pb-cDs"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Green"/>
+                        <constraints>
+                            <constraint firstItem="0XK-Kb-KlS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EFP-St-cNr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0XK-Kb-KlS" secondAttribute="trailing" id="N1S-Sx-edn"/>
+                            <constraint firstItem="0XK-Kb-KlS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e30-rD-SUx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="0XK-Kb-KlS" id="2w7-HQ-dhp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Black">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="Blue">
+            <color red="0.45500001311302185" green="0.80000001192092896" blue="0.81199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.22699999809265137" green="0.70200002193450928" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="0.9649999737739563" green="0.5220000147819519" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.93699997663497925" green="0.28200000524520874" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.99599999189376831" green="0.74900001287460327" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
